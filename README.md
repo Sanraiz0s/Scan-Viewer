@@ -2,7 +2,7 @@
 *RU 
 
 *Назначение программы*
-*Program* — настольное приложение на Qt для визуализации *B-scan* данных (2D-изображение), полученных из бинарного файла.  
+ — настольное приложение на Qt для визуализации *B-scan* данных (2D-изображение), полученных из бинарного файла.  
 
 Приложение позволяет:
 - загрузить файл с данными (\*.bin\, \*.binary\);
@@ -10,9 +10,9 @@
 - просмотреть соответствующую B-scan-картинку (оси: \RX\ по ширине, \Sample\ по высоте).
 
 *Что происходит с данными*
-- Из файла читаются две части сигналов (условно \part0\ и \part1\) размерности \64 x 64 x 8192\.
+- Из файла читаются две части сигналов размерности \64 x 64 x 8192\.
 - Для каждой точки считается модуль комплексного сигнала:
-  - \res = sqrt(part0^2 + part1^2)\
+res = sqrt(part0^2 + part1^2)\
 - Далее результат нормализуется по глобальным \min/max\ и окрашивается по градиенту (от синего к красному).
 
 *Стек технологий*
@@ -26,8 +26,8 @@
 2. Откройте проект.
 3. В исходной папке выберите папку *\Code\*.
 4. Откройте файл проекта *\Program.pro\*.
+   
 *Инструкция по запуску приложения*
-
 1. В исходной папке зайдите в папку *\Release\*.
 2. Затем откройте *\release\*.
 3. Запустите *\Program.exe\*.
@@ -43,9 +43,9 @@ The application allows you to:
 - view the corresponding B-scan image (axes: \RX\ as image width, \Sample\ as image height).
 
 *Data processing summary*
-- The file contains two signal parts (referred to as \part0\ and \part1\) with dimensions \64 x 64 x 8192\.
+- The file contains two signal parts with dimensions \64 x 64 x 8192\.
 - For each point, the magnitude is computed:
-  - \res = sqrt(part0^2 + part1^2)\
+res = sqrt(part0^2 + part1^2)\
 - The result is normalized using global \min/max\ values and mapped to a color gradient (blue → red).
 
 *Technology stack*
