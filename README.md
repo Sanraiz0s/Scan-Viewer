@@ -1,4 +1,4 @@
-# B-scan Viewer
+# Scan Viewer
 *RU 
 
 *Назначение программы*
