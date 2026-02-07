@@ -58,7 +58,7 @@ res = sqrt(part0^2 + part1^2)
 1. Open *Qt Creator*.
 2. Open the project.
 3. In the source directory, select the *Code* folder.
-4. Open *\Program.pro\*.
+4. Open *Program.pro*.
 
 *How to run the application*
 1. In the source directory, open the *Release* folder.
